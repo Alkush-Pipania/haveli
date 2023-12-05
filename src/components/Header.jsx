@@ -25,10 +25,10 @@ export default function Header() {
     <div  className="bg-white border-b shadow-sm sticky top-0 z-10">
         <header className="flex justify-between items-center px-3 max-w-6xl mx-auto">
             <div className="">
-                <img src={logo} alt="logo" className="h-5 cursor-pointer scale-[228%] " onClick={()=>navigate("/")} />
+                <img src={logo} alt="logo" className="h-5 cursor-pointer scale-[228%] md:ml-5  ml-4" onClick={()=>navigate("/")} />
             </div>
             <div>
-                <ul className="flex space-x-10">
+                <ul className="flex md:space-x-10 lg:space-x-10 space-x-4">
                     <li className={`  cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-transparent    ${pathMatchRoute("/") && "text-black border-b-red-500"}`} onClick={()=>navigate("/")}>Home</li>
                     <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-transparent    ${pathMatchRoute("/offers") && "text-black border-b-red-500"}`} onClick={()=>navigate("/offers")}>Offers</li>
                     <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-transparent   ${(pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) && "text-black border-b-red-500"}`} onClick={()=>navigate("/profile")}>{pageState}</li>
