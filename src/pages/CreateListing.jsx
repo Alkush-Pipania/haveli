@@ -461,7 +461,7 @@ export default function CreateListing() {
                 {type === "rent" && (
                   <div className="">
                     <p className="text-md w-full whitespace-nowrap">
-                      $ / Month
+                     &#x20B9; / Month
                     </p>
                   </div>
                 )}
