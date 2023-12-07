@@ -55,6 +55,7 @@ export default function Slider() {
           {listings.map(({ data, id }) => (
             <SwiperSlide
               key={id}
+              className=" bg-black bg-blend-multiply"
               onClick={() => navigate(`/category/${data.type}/${id}`)}
             >
               <div
