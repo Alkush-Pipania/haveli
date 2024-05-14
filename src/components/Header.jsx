@@ -32,7 +32,7 @@ export default function Header() {
                     <li className={`  cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-transparent    ${pathMatchRoute("/") && "text-black border-b-red-500"}`} onClick={()=>navigate("/")}>Home</li>
                     <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-transparent    ${pathMatchRoute("/offers") && "text-black border-b-red-500"}`} onClick={()=>navigate("/offers")}>Offers</li>
                     <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-transparent   ${(pathMatchRoute("/sign-in") || pathMatchRoute("/profile")) && "text-black border-b-red-500"}`} onClick={()=>navigate("/profile")}>{pageState}</li>
-                    <a href="https://alkush-pipania.github.io/portfolio/" rel="noopener" target="_blank" className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-transparent hover:text-gray-500 active:text-red-600 ` }>About us</a>
+                    <a href="" rel="noopener" target="_blank" className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-transparent hover:text-gray-500 active:text-red-600 ` }>About us</a>
                    
                     
                 </ul>
